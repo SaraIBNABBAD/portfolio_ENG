@@ -1,0 +1,165 @@
+.corp{
+    /* height: 30vh; */
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    width: 50%;
+    vertical-align: top;
+    
+
+}
+.bodyy{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.comp-titre{
+    text-align: center;
+    color: #b07301;
+    font-size: 3em;
+}
+.iconn{
+    font-size: 3.8em;
+    margin: 50px;
+    color: #feb633;
+}
+.iicon{
+  font-size: 3.8em;
+  margin: 50px;
+  color: #b07301;
+}
+.iconn:hover{
+  transform: translateY(6px);
+}
+.iicon:hover{
+  transform: translateY(6px);
+}
+
+/* SKILL BAR */
+.contnr{
+  width: 35%;
+
+}
+  .skills{
+      background: #efeff2;
+    }
+    .skill{
+      color: white;
+      padding: 3px;
+      text-align: right;
+    }
+    .contnr p{
+      color: #5e4311 ;
+      font-size: 1em;
+      font-weight: 700;
+    }
+    .html{
+      background-color: #feb633;
+      width: 90%;
+      animation: html 2s 1s;
+    }
+    .css{
+      background-color: #feb633;
+      width: 85%;
+      animation: css 2s 1s;
+    }
+    .boot{
+      background-color: #feb633;
+      width: 80%;
+      animation: boot 2s 1s;
+    }
+
+    .php{
+      background-color: #feb633;
+      width: 75%;
+      animation: php 2s 1s;
+    }
+    
+    .js{
+      background-color: #feb633;
+      width: 70%;
+      animation: js 2s 1s;
+    }
+
+    @keyframes html {
+      from {
+        width: 0;
+      }
+    
+      to {
+        width: 90%;
+      }
+    }
+    @keyframes css {
+      from {
+        width: 0;
+      }
+    
+      to {
+        width: 85%;
+      }
+    }
+    @keyframes boot {
+      from {
+        width: 0;
+      }
+    
+      to {
+        width: 80%;
+      }
+    }
+    @keyframes php {
+      from {
+        width: 0;
+      }
+    
+      to {
+        width: 75%;
+      }
+    }
+    @keyframes js {
+      from {
+        width: 0;
+      }
+    
+      to {
+        width: 70%;
+      }
+    }
+    
+
+
+
+    @media screen and (max-width: 600px){
+      .iconn{
+        font-size: 3.2em;
+        margin: 20px;
+    }
+    .iicon{
+      font-size: 3.2em;
+      margin: 20px;
+  }
+    .bodyy{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: space-around;
+  }
+  .contnr{
+    width: 90%;
+    margin: auto;
+  
+  }
+  .corp{
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    width: 80%;
+    margin: auto;
+
+}
+.comp-titre{
+  font-size: 2.5em;
+}
+ }

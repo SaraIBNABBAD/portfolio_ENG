@@ -1,0 +1,108 @@
+.nav{
+    padding: 2px;
+    width: 100%;
+    background-color: #feb633;
+    text-align: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+
+}
+
+ul {
+  padding: 3px;
+}
+
+.nav h1 span{
+  color: #5e4311;
+  
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+ul li .ahref {
+    text-decoration: none;
+     padding: 0px 10px;
+     color: white;
+  }
+ul li .ahref:hover{
+    /* background-color: rgba(240, 248, 255, 0.441); */
+    border-radius: 5px 5px 0 0;
+    border-bottom: 3px solid ;
+    border-color: linear-gradient( #feb633, #b07301 , #5e4311 40%);
+    background: -webkit-linear-gradient( #feb633 , #b07301 , #5e4311 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+}
+.symbol{
+  color: white;
+}
+.symbol:hover{
+  color: linear-gradient( #feb633 , #b07301 , #5e4311 40%);
+}
+.btn-menu{
+    all: unset;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+  }
+.btn-menu{
+    display: none;
+}
+.port{
+  color: white;
+  margin-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .btn-menu{
+    display:block;
+  }
+  ul li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 0 2px;
+    }
+  
+   ul {
+      display: none;
+    }
+  
+    .active {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 73px;
+      left: 0;
+      justify-content: center;
+      align-items: flex-start;
+      width:500px;
+      background-color: #162051bc;
+    }
+  
+    ul li .ahref:hover {
+      background-color: rgba(240, 248, 255, 0.441);
+      border-radius: 5px 5px 0 0;
+      border-bottom: 3px solid #feb633;
+      padding: 2px;
+  }
+
+  ul li .ahref {
+    text-decoration: none;
+     padding: 0px 5px;
+     margin: 10px;
+     border-radius: 5px 5px 0 0;
+      border-bottom: 3px solid transparent;
+
+  }
+}

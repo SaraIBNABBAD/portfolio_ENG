@@ -1,0 +1,81 @@
+.footer{
+  margin: 100px 80px;
+  height: 50vh;
+}
+ .tit{
+  color: #b07301;
+  font-size: 3em;
+  text-align: center;
+  margin:100px 30px 30px 10px;
+ }
+ 
+ .envoi{
+  width: 50%;
+  background-color: #feb633;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  border-radius: 5px;
+ }
+ .envoi:hover{
+  
+    box-shadow: 0 0 0px #feb633,
+                0 0 5px #feb633,
+                0 0 10px #feb633,
+                0 0 15px #feb633;
+ }
+ 
+ .social{
+  text-align: center;
+  margin: 30px;
+ }
+ .social a{
+  font-size: 2em;
+  margin: 10px;
+  color: #b07301;
+}
+
+.form-outline{
+  position: relative;
+}
+.form-label{
+   position: absolute;
+   top: 10px;
+   left: 15px;
+   transition: all 0.2s;
+}
+
+ .form-control:focus + .form-label{
+    top: -13px;
+    background-color: white;
+    font-size: 0.9rem !important;
+ }
+.img-fluid{
+  border-top-left-radius: 0.5em; 
+  border-bottom-left-radius: 0.5em;
+}
+
+@media screen and (max-width: 600px){
+   form{
+    width: 100%;
+   } 
+   
+   
+  .envoi{
+    margin: auto 50px;
+    width: 60%;
+  }
+  
+  .footer{
+    margin: 30px;
+  }
+  .tit{
+    font-size: 2.5em;
+}
+}

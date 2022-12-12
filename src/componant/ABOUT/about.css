@@ -1,0 +1,85 @@
+
+.about{
+    margin: 80px;
+}
+
+.img{
+    width: 27%;
+    margin-left: 5px;
+}
+.text{
+    width: 60%;
+    color: #f3f3f3;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #feb633;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 1px 1px 20px #c5c5c6;
+    overflow: hidden;
+    font-size: 1.2em; 
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+.text p{
+    padding: 10px;
+}
+.propos{
+    text-align: center;
+    color: #5e4311;
+    font-weight: 800;
+}
+.tiitre{
+    color: #b07301;
+    text-align: center;
+    font-size: 3em;
+}
+.suis{
+    color:white;
+    text-align: center;
+    font-size: 1.3em;
+}
+.dwn{
+    color: #feb633;
+}
+.down {
+    padding: 10px;  
+    background: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.down:hover{
+    color: #feb633;
+    background: #fff;
+    
+    box-shadow:0 0 0px #fff,
+               0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff;
+  }
+.down:active{
+    transform: translateY(4px);
+  }
+
+@media screen and (max-width: 600px){
+    .text{
+        width: 100%;
+        color: white;
+        padding:5px;
+        box-sizing: border-box;
+       
+    }
+    .about{
+        margin:20px;
+    }
+    .tiitre{
+        font-size: 2.5em;
+    }
+}

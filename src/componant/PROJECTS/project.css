@@ -1,0 +1,150 @@
+
+    @property --rotate {
+        syntax: "<angle>";
+        initial-value: 132deg;
+        inherits: false;
+      }
+      
+      :root {
+        --card-height: 60vh;
+        --card-width: calc(var(--card-height) / 1.5);
+      }
+    
+      .imgMt{
+        width:100%;
+        height: 25vh;
+      }
+      .project{
+        color: #b07301;
+        text-align: center;
+        margin: 80px 0 20px 0;
+      }
+      .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+        margin: 15px;
+    }
+      .carde {
+        background: #f3f3f3;
+        width: var(--card-width);
+        height: var(--card-height);
+        padding: 3px;
+        position: relative;
+        border-radius: 6px;
+        align-items: center;
+        text-align: center;
+        /* display: flex; */
+        font-size: 1.5em;
+        color: rgb(88 199 250 / 0%);
+        cursor: pointer;
+        font-family: cursive;
+        color: #feb633;
+        transition: color 1s;
+        animation: card 0.8s ease-in;
+      }
+      .carde:hover:before, .carde:hover:after {
+        animation: none;
+        opacity: 0;
+      }
+      
+      
+      .carde::before {
+        content: "";
+        width: 104%;
+        height: 102%;
+        border-radius: 8px;
+        background-image: linear-gradient(
+          var(--rotate)
+          , #feb633, #b07301 43%, #5e4311);
+          position: absolute;
+          z-index: -1;
+          top: -1%;
+          left: -2%;
+          animation: spin 2.5s linear infinite;
+      }
+      
+      .carde::after {
+        position: absolute;
+        content: "";
+        top: calc(var(--card-height) /6);
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        transform: scale(0.8);
+        filter: blur(calc(var(--card-height) / 6));
+        /* background-image: linear-gradient(
+          var(--rotate)
+          , #feb633, #b07301 43%, #5e4311); */
+          opacity: 1;
+        transition: opacity .5s;
+        animation: spin 2.5s linear infinite;
+      }
+
+      
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 21rem;
+        text-align: center;
+      }
+      .lien{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .liena{
+        margin: 10px;
+        color: #b07301;
+        
+      }
+      
+      .show{
+    background-color: #feb633;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    animation: btn 0.5s ease-in;
+    animation-delay: 2s;
+  }
+  
+  .desc{
+    text-align: center;
+    font-size: 0.6em;
+    padding: 0;
+  }
+      
+      @keyframes spin {
+        0% {
+          --rotate: 0deg;
+        }
+        100% {
+          --rotate: 360deg;
+        }
+      }
+      
+  
+  
+  @media screen and (max-width: 600px){
+    .project{
+      font-size: 2.5em;
+    }
+  }
+  
+  

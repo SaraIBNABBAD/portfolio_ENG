@@ -1,0 +1,75 @@
+
+.head{
+    width: 100%;
+    height: 110vh;
+   /* background:linear-gradient(rgba(240, 169, 55, 0.394),
+    rgba(245, 219, 159, 0.539)),url(../img/back.jpg); */
+    background-image: url(../img/back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+  
+  }
+   
+  .info{
+   
+      color:  #feb633;
+      font-size: 1.3em;
+      margin: auto 0;
+      font-weight: 600;
+      
+    }
+    .nom{
+     color: white;
+      font-size: 3em;
+      margin: 0;
+    } 
+    .cv{
+      padding: 10px;
+      background-color: #feb633;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      letter-spacing: 1px;
+      outline: none;
+      border-radius: 5px;
+      border-color: transparent;
+      margin: 5px;
+    }
+    .cv:hover{
+      background: #feb633;
+      color: #fff;
+      
+      box-shadow:0 0 0px #feb633,
+                 0 0 5px #feb633,
+                 0 0 10px #feb633,
+                 0 0 25px #feb633;
+    }
+    
+    .cv:active{
+      transform: translateY(4px);
+    }
+    .flxbtn{
+      display: flex;
+      gap: 10px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    @media screen and (max-width: 600px){
+      .info{
+      text-align: center;
+       font-size: 1.2em; 
+      }
+      .nom{
+        color: white;
+         font-size: 2.3em;
+       }
+    }
+    
+    
